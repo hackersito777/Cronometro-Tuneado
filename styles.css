@@ -1,0 +1,34 @@
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #000;
+  }
+  
+  .timer div,
+  .timer span {
+    font-size: 60px;
+    color: #fff;
+  }
+  
+  .timer span {
+    margin: 0 5px;
+  }
+  
+  .timer.active {
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
